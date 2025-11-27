@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Parfume - Gak Ganteng Yang Penting Wangi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            background: white;
+            padding: 50px 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 3em;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 1.5em;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .product {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .product h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .product p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 1.4em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .contact {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            padding: 30px;
+        }
+        
+        .url-info {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">✨</div>
+            <h1>JB PARFUME</h1>
+            <p class="tagline">"Gak ganteng yang penting gua wangi"</p>
+            <div>
+                <a href="#products" class="cta-button">📦 Lihat Produk</a>
+                <a href="#contact" class="cta-button">📞 Hubungi Kami</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="products" id="products">
+                <div class="product">
+                    <div class="product-icon">🔥</div>
+                    <h3>EAU DE PARFUM PREMIUM</h3>
+                    <p>Aroma mewah dengan ketahanan hingga 8 jam. Cocok untuk acara formal dan meeting penting.</p>
+                    <div class="price">Rp 150.000</div>
+                    <button class="cta-button">Beli Sekarang</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">💎</div>
+                    <h3>INTENSE FRAGRANCE</h3>
+                    <p>Wangi yang bold dan memorable. Untuk mereka yang percaya diri dan berkarakter kuat.</p>
+                    <div class="price">Rp 180.000</div>
+                    <button class="cta-button">Beli Sekarang</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">🌊</div>
+                    <h3>FRESH SCENT SERIES</h3>
+                    <p>Aroma segar dan youthful. Perfect untuk daily use dan casual hangout.</p>
+                    <div class="price">Rp 120.000</div>
+                    <button class="cta-button">Beli Sekarang</button>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>📞 Hubungi JB Parfume</h2>
+                <p>WhatsApp: 08123456789</p>
+                <p>Instagram: @jbparfume</p>
+                <p>Email: jbparfume@example.com</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="url-info">
+                🌐 Website URL: https://jbparfume.github.io/jbparfume-site/
+            </div>
+            <p>&copy; 2024 JB Parfume. "Gak ganteng yang penting gua wangi"</p>
+            <p>Website powered by GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll untuk tombol
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Alert untuk tombol Beli Sekarang
+        document.querySelectorAll('.cta-button').forEach(button => {
+            if (button.textContent === 'Beli Sekarang') {
+                button.addEventListener('click', function() {
+                    alert('🚀 Terima kasih! Fitur pembelian akan segera tersedia.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
